@@ -4,7 +4,7 @@
   <head>
     @@include('./_head.html', {
     "webRoot": ".",
-    "title": "Naseeha Institute - Journey to Excellence"
+    "title": "Waitiyi - Cheap Calls"
     })
   </head>
 
@@ -266,63 +266,7 @@
     </main>
 
     @@include('./_scripts.html', { "webRoot": "." })
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Change "{}" to your options:
-        // https://github.com/sampotts/plyr/#options
-        const player = new Plyr("#player", {});
-        window.player = player;
-      });
-
-      const swiper = new Swiper(".mySwiper", {
-        loop: false,
-        // direction: "vertical",
-        direction: "horizontal",
-        "mousewheel": {
-          // forceToAxis: true,
-          sensitivity: 1,
-          releaseOnEdges: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        keyboard: {
-          enabled: true,
-        },
-        hashNavigation: {
-          watchState: true,
-        },
-        slidesPerView: 1,
-        slidesPerColumn: 1,
-        freeMode: true,
-        // grabCursor: true,
-        // centeredSlides: true,
-        navigation: {
-          enabled: false,
-        },
-        breakpoints: {
-          340: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          640: {
-            slidesPerView: 3.5,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-        },
-      });
-      (function () { })();
-    </script>
+ 
   </body>
 
 </html>
