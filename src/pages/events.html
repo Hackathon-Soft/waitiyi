@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    @@include('./_head.html', {
+    "webRoot": "./../..",
+    "title": "Naseeha - Select Plan"
+    })
+  </head>
+
+  <body>
+
+    <header class="main-header w-100">
+      @@include('./_nav.html', {
+      "webRoot": "./.."
+      })
+
+      @@include('./_navigation.html', {
+      "webRoot": "./..",
+      "page": "detail",
+      "page_group": "detail"
+      })
+    </header>
+
+    <main class="section">
+      <section class="cover-container style-2 mx-auto"
+        style="background-image: url(./../assets/img/royality-images/img_13.jpg);">
+        <div class="container-fluid section-x-margins">
+          <div class="row g-0">
+            <div class="col-24 col-xl-24">
+              <div class="hero-inner text-center">
+                <br /><br /><br />
+                <div>
+                  <h1 class="heading text-white">
+                    Events
+                  </h1>
+                  <!-- <p class="lead text-white">
+                    
+                  </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- // events -->
+      <section class="pt-4 pt-md-5">
+        <div class="container-fluid section-x-margins">
+          <div class="row align-items-center">
+            <div class="col-sm-24 col-md-22 col-lg-18">
+              <div class="sec-inner">
+                <h3 class="title">Events</h3>
+                <p class="sec-text">
+                  Islam-intensive courses where we focus teaching the Quran and
+                  the Prophetic Sunnah (PBUH) in-depth along with individual
+                  counselling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid section-x-margins">
+          <div class="row align-items-center">
+            <div class="col-md-12">
+              @@include('./html-parts/_event.html', {
+              "webRoot": "..",
+              "classes": " ",
+              "img": "event1.jpg",
+              "heading": "Weekly Spiritual Gatherings",
+              "text": "Islam-intensive courses where we focus teaching the Quran and the Prophetic Sunnah (PBUH).",
+              "date": "22 August, 2022",
+              })
+            </div>
+            <div class="col-md-12">
+              @@include('./html-parts/_event.html', {
+              "webRoot": "..",
+              "classes": " ",
+              "img": "event2.jpg",
+              "heading": "Islaminar",
+              "text": "Islam-intensive courses where we focus teaching the Quran and the Prophetic Sunnah (PBUH).",
+              "date": "22 August, 2022",
+              })
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('./_footer.html', {
+      "webRoot": "./..",
+      "classes": "text-black"
+      })
+    </main>
+
+
+    @@include('./_scripts.html', {
+    "webRoot": "./.."
+    })
+
+  </body>
+
+</html>

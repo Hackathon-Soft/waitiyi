@@ -1,0 +1,173 @@
+.ct-bar {
+  stroke-linecap: round;
+  stroke-width: 10px;
+}
+
+.ct-label {
+  fill: $body-color;
+  color: $body-color;
+  font-size: 0.75rem;
+  margin-top: 6px;
+  font-weight: $font-weight-bold;
+}
+
+.ct-slice-pie {
+  stroke: $white;
+  stroke-width: 3px;
+}
+
+.ct-chart-donut .ct-series {
+  stroke: $white;
+  stroke-width: 3px;
+}
+
+.ct-chart-pie .ct-label,
+.ct-chart-donut .ct-label {
+  font-size: 0.75rem;
+  font-weight: $font-weight-bold;
+}
+
+.small-chart {
+  margin-left: -1rem;
+}
+
+//Label color Fix for pie chart
+
+.ct-chart-pie .ct-label,
+.ct-chart-donut .ct-label {
+  color: #ffffff;
+  fill: #ffffff;
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+}
+
+.ct-series-g {
+  .ct-grid {
+    stroke: #CDCDCD;
+    stroke-width: 2px;
+    stroke-dasharray: 2px;
+
+    &.ct-vertical {}
+  }
+
+  .ct-label.ct-horizontal.ct-end {
+    margin-left: -9px;
+    margin-top: 10px;
+    color: rgb(13, 13, 13);
+  }
+}
+
+.ct-series-g .ct-point,
+.ct-point {
+  stroke: darken($primary, 5%);
+  stroke-width: 6px;
+  stroke-linecap: round;
+}
+
+.ct-series-g .ct-line,
+.ct-series-g .ct-bar,
+.ct-series-g .ct-slice-donut {
+  stroke: darken($success, 0%);
+}
+
+.ct-line {
+  fill: none;
+  stroke-width: 1px;
+}
+
+.ct-series-g .ct-slice-pie,
+.ct-series-g .ct-slice-donut-solid,
+.ct-series-g .ct-area {
+  fill: #f8bd7a00;
+}
+
+// .ct-chart-sales-value
+.ct-chart-sales-value {}
+
+// subscribers-pie-graph
+.subscribers-pie-graph {
+  .ct-chart-donut .ct-series {
+    stroke: #0049cf;
+    stroke-width: 0;
+  }
+
+  .ct-chart-pie .ct-label,
+  .ct-chart-donut .ct-label {
+    color: $success;
+    fill: $success;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .total-path {
+    path {
+      // stroke: #c20f0f;
+      fill: #D6EEEC;
+    }
+  }
+
+  .web-path {
+    path {
+      // stroke: #c20f0f;
+      fill: #1A4384;
+    }
+  }
+
+  .mobile-path {
+    path {
+      // stroke: #c20f0f;
+      fill: #22A09D;
+    }
+  }
+}
+
+// 
+svg.donut {
+  .chart-text {
+    fill: #000;
+    transform: translateY(0.25em);
+  }
+
+  .chart-number {
+    font-size: 0.5em;
+    line-height: 1;
+    text-anchor: middle;
+    // transform: translateY(-0.25em);
+  }
+
+  .chart-label {
+    font-size: 0.2em;
+    text-transform: uppercase;
+    text-anchor: middle;
+    transform: translateY(0.7em);
+  }
+}
+
+// vector map chart 
+.progress.vector-map {
+  background: linear-gradient(90deg, #EFFDFB 0%, #238582 100%);
+  border-radius: 8.54793px;
+}
+
+// svg#countries_svg {
+//   #countries {
+//     path {
+//       stroke-linejoin: round;
+//       stroke: #F5F5F5;
+//       fill: #F5F5F5;
+//     }
+//   }
+// }
+
+.svgMap-map-wrapper .svgMap-map-image {
+  background-color: #fff;
+
+  path {
+    stroke: #F5F5F5;
+    // fill: #dfdfdf;
+  }
+}
+
+.svgMap-map-controls-wrapper {
+  display: none !important;
+}

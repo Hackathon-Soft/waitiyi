@@ -1,0 +1,113 @@
+.section-hero {
+
+  .sec-inner {
+    .sm-title {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #DE01FE;
+      letter-spacing: 0.25em;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .title {
+      margin-bottom: 32px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 82px;
+
+      // Extra Small devices (landscape phones, 376px and up)
+      @include media-breakpoint-up(xs) {
+        font-size: 64px;
+        line-height: 82px;
+      }
+
+      // Small devices (landscape phones, 576px and up)
+      @include media-breakpoint-up(sm) {
+        font-size: 64px;
+        line-height: 82px;
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @include media-breakpoint-up(md) {
+        font-size: 64px;
+        line-height: 82px;
+      }
+
+      // Large devices (desktops, 992px and up)
+      @include media-breakpoint-up(lg) {
+        font-size: 64px;
+        line-height: 82px;
+      }
+
+      // X-Large devices (large desktops, 1200px and up)
+      @include media-breakpoint-up(xl) {}
+
+      &.type-2 {
+        margin-bottom: 40px;
+      }
+    }
+
+    .sec-text {
+      // margin-bottom: 56px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+
+      // Extra Small devices (landscape phones, 376px and up)
+      @include media-breakpoint-up(xs) {}
+
+      // Small devices (landscape phones, 576px and up)
+      @include media-breakpoint-up(sm) {
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      // Large devices (desktops, 992px and up)
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      // X-Large devices (large desktops, 1200px and up)
+      @include media-breakpoint-up(xl) {}
+
+      &.type-2 {
+        margin-bottom: 80px;
+      }
+    }
+
+    img.sec-img {
+      filter: drop-shadow(0px 0px 16px rgba(158, 158, 158, 0.25));
+      border-radius: 4px;
+
+      // Extra Small devices (landscape phones, 376px and up)
+      @include media-breakpoint-up(xs) {}
+
+      // Small devices (landscape phones, 576px and up)
+      @include media-breakpoint-up(sm) {}
+
+      // Medium devices (tablets, 768px and up)
+      @include media-breakpoint-up(md) {}
+
+      // Large devices (desktops, 992px and up)
+      @include media-breakpoint-up(lg) {}
+
+      // X-Large devices (large desktops, 1200px and up)
+      @include media-breakpoint-up(xl) {}
+    }
+  }
+}

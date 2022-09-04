@@ -1,0 +1,38 @@
+/**
+ * = Badges
+ */
+
+.badge {
+
+  a {}
+
+  &.super-badge {
+    vertical-align: super;
+  }
+}
+
+// Variations
+.badge-pill {}
+
+// Multiple inline badges
+.badge-inline {
+  margin-right: .625rem;
+
+  &+span {
+    top: 2px;
+    position: relative;
+
+    &>a {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Sizes
+.badge-sm {
+  padding: .2rem .6rem;
+}
+
+.badge-lg {
+  padding: .35rem .85rem;
+}

@@ -1,0 +1,79 @@
+body {
+  color: #fff;
+  background: #290445;
+}
+
+:root {
+  --bs-body-color: #fff;
+}
+
+html,
+body,
+p {
+  color: #fff;
+  // font-family: 'Montserrat', sans-serif;
+  // font-size: 16px;
+  // line-height: 24px;
+  // letter-spacing: -0.01em;
+  --bs-body-font-size: 12.5px;
+  font-size: 12.5px;
+
+  // Extra Small devices (landscape phones, 376px and up)
+  @include media-breakpoint-up(xs) {
+    --bs-body-font-size: 13px;
+    font-size: 13px;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    --bs-body-font-size: 14px;
+    font-size: 14px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    --bs-body-font-size: 15px;
+    font-size: 15px;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    --bs-body-font-size: 16px;
+    font-size: 16px;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {}
+}
+
+iframe {
+  border: 0;
+}
+
+figcaption,
+figure,
+main {
+  display: block;
+  margin: 0;
+}
+
+main {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+button:focus {
+  outline: 0;
+}
+
+label {
+  font-weight: $font-weight-bold;
+  margin-bottom: .5rem;
+}

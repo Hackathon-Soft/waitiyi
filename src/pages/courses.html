@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    @@include('./_head.html', {
+    "webRoot": "./..",
+    "title": "Naseeha - Select Plan"
+    })
+  </head>
+
+  <body>
+    <header class="main-header w-100">
+      @@include('./_nav.html', {
+      "webRoot": "./.."
+      })
+
+      @@include('./_navigation.html', {
+      "webRoot": ".",
+      "page": "overview",
+      "page_group": "components"
+      })
+    </header>
+
+    <main class="section">
+      <section class="cover-container style-2 gradient mx-auto" style="background-image: url(/assets/img/bg-tr.png)">
+        <div class="container-fluid section-x-margins">
+          <div class="row g-0">
+            <div class="col-24 col-xl-24">
+              <div class="hero-inner extra-padding text-center">
+                <br /><br /><br />
+                <div>
+                  <h1 class="heading text-white">
+                    Courses
+                  </h1>
+                  <p class="lead text-white">
+                    Islam-intensive courses where we focus teaching the Quran and the Prophetic Sunnah (PBUH) in-depth
+                    along with individual counselling.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- // Courses -->
+      <section class="courses-list mx-auto">
+        <div class="container-fluid section-x-margins">
+          <h5 class="fw-bold pt-4 d-block d-md-none">5 Courses available</h5>
+          <br />
+          @@include('./html-parts/_course-single.html', {
+          "webRoot": ".",
+          "classes": "",
+          "course": {
+          "status": "closed",
+          "thumbnail": "bg-1.jpg",
+          "title": "Associate of Islamic Studies & Leadership (AISL)",
+          "duration": "1 years (2 Semester)",
+          "location": "64-G DHA, Phase 2",
+          "days": "4 days a week (Mon, Tue, Thurs, & Fri)",
+          }
+          })
+          @@include('./html-parts/_course-single.html', {
+          "webRoot": ".",
+          "classes": "",
+          "course": {
+          "status": "opened",
+          "thumbnail": "bg-2.jpg",
+          "title": "Islamic Studies & Leadership",
+          "duration": "2 years (4 Semester)",
+          "location": "64-G DHA, Phase 2",
+          "days": "5 days a week (Sun, Mon, Tue, Thurs, & Fri)",
+          }
+          })
+          @@include('./html-parts/_course-single.html', {
+          "webRoot": ".",
+          "classes": "",
+          "course": {
+          "status": "closed",
+          "thumbnail": "bg-3.jpg",
+          "title": "Associate of Islamic Studies & Leadership (AISL)",
+          "duration": "1 years (2 Semester)",
+          "location": "64-G DHA, Phase 2",
+          "days": "4 days a week (Mon, Tue, Thurs, & Fri)",
+          }
+          })
+        </div>
+      </section>
+      <!-- // Be a Part of Naseeha -->
+      @@include('./html-parts/_be-a-part-of.html', {
+      "webRoot": ".",
+      "classes": ""
+      })
+
+      @@include('./_footer.html', {
+      "webRoot": ".",
+      "classes": "text-black"
+      })
+    </main>
+
+    @@include('./_scripts.html', {
+    "webRoot": "./.."
+    })
+
+  </body>
+
+</html>

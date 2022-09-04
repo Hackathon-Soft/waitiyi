@@ -1,0 +1,51 @@
+/**
+ * = Breadcrumbs
+ */
+
+.breadcrumb-item {
+
+  &,
+  a {
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {}
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {}
+  }
+
+  &.active {}
+
+}
+
+.breadcrumb-transparent {
+  background: transparent;
+  padding: 0;
+}
+
+@each $color,
+$value in $theme-colors {
+  .breadcrumb-#{$color} {
+    .breadcrumb-item {
+      &.active {}
+    }
+
+    &.breadcrumb-transparent {
+      background: transparent;
+
+      .breadcrumb-item {
+        &.active {}
+      }
+    }
+  }
+}
+
+.breadcrumb-text-light {
+  .breadcrumb-item {
+
+    &,
+    a {}
+
+    &:before {}
+  }
+}

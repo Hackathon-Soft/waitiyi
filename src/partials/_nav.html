@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg navbar-dark w-100" id="main_nav">
+  <div class="container-fluid section-x-margins position-relative">
+    <div>
+      <!-- <button class="navbar-toggler me-3 collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbar-content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+          <path fill=""
+            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </button> -->
+      <button class="navbar-toggler border border-primary p-2 me-3" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-menu-button-wide-fill text-primary" viewBox="0 0 16 16">
+          <path fill=""
+            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img alt="Feedify" src="/assets/img/logo.svg" class="logo" />
+      </a>
+    </div>
+    <div class="d-flex d-md-none">
+      <a href="/pages/registration-short.html" class="btn btn-outline-white btn-nav">
+        <i class="bg"></i>
+        <span class="btn-text">Join Us</span>
+      </a>
+    </div>
+    <div class="collapse position-relative navbar-collapse" id="navbar-content">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <button class="nav-link @@if (context.page_group !== 'page_examples') {  }" onclick="
+location.href='/pages/courses.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="mb-0 font-small">
+              Courses
+
+            </span>
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="#" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="mb-0 font-small">
+              Intensives
+            </span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link @@if (context.page_group !== 'page_examples') {  }" href="#" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="mb-0 font-small">
+              Events
+            </span>
+          </a>
+        </li>
+        <li class="nav-item dropdown dropdown-mega position-static">
+          <a class="nav-link" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+            Community
+          </a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <a href="/pages/registration-short.html" class="btn btn-outline-white btn-nav">
+          <i class="bg"></i>
+          <span class="btn-text">Join Naseeha</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-end text-bg-light gradient-main" tabindex="-1" id="offcanvasNavbarDark"
+  aria-labelledby="offcanvasNavbarDarkLabel">
+  <div class="offcanvas-header">
+    <a class="offcanvas-title" href="/" id="offcanvasNavbarDarkLabel">
+      <img alt="Feedify" src="/assets/img/logo.svg" height="35" class="logo" />
+    </a>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+    </ul>
+    <div class="d-flex">
+      <a href="/pages/registration-short.html" class="btn btn-outline-white btn-nav">
+        <i class="bg"></i>
+        <span class="btn-text">Join Naseeha</span>
+      </a>
+    </div>
+  </div>
+</div>

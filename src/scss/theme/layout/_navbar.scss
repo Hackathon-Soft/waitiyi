@@ -1,0 +1,245 @@
+/**
+ * = Navigation bars
+ */
+$border-btn-width: 2px;
+
+.main-header {
+  background: linear-gradient(89.12deg, #18367E 0.76%, #21809C 99.73%);
+  background: $gradient-main;
+}
+
+.navbar:not(.offcanvas-navbar) {
+  padding: 12px 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.1);
+  // backdrop-filter: blur(1px);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+  // sticky
+  &.nav-is-sticky {
+    background-color: #fff;
+    --bs-navbar-color: #000;
+
+    .navbar-brand {
+
+      img {
+        filter: unset;
+      }
+    }
+
+    .navbar-toggler {
+      border-color: #000;
+      color: #000;
+
+      svg,
+      path {
+        fill: #000;
+        color: #000;
+      }
+    }
+
+    .nav-item {
+      .nav-link {
+        color: #131313;
+
+        svg:not(.arrow) {
+          filter: invert(1);
+        }
+      }
+    }
+
+    // 
+    .btn-nav {
+      color: $primary;
+      box-shadow: 0px 0px 0px $border-btn-width $primary  !important;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+        background-color: $primary;
+        box-shadow: 0px 0px 0px $border-btn-width $primary  !important;
+        background-color: transparent;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {}
+    }
+  }
+}
+
+
+.navbar-brand {
+  text-transform: uppercase;
+
+  img {
+    filter: brightness(100);
+    // filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.562)) drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.452)) drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.474));
+    height: 25px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      height: 30px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      height: 40px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      height: 40px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {}
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {}
+  }
+}
+
+$border-btn-width: 2px;
+
+.btn-nav {
+  border-width: 0px;
+  color: $white;
+  box-shadow: 0px 0px 0px $border-btn-width #fff !important;
+  outline: none;
+  transition: all 0.3s ease-in;
+
+  .bg {
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    position: absolute;
+    left: -2px;
+    bottom: 0px;
+    top: -2px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    background-color: $primary;
+    box-shadow: 0px 0px 0px $border-btn-width $primary  !important;
+    background-color: transparent;
+
+    .bg {
+      color: #fff;
+      background-color: $primary;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {}
+}
+
+.navbar-nav {
+
+  .nav-item {
+    margin-right: 48px;
+
+    .nav-link {
+      padding: 1.0rem 0;
+      width: auto;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      position: relative;
+      outline: none;
+      border: none;
+      background: none;
+
+      @include media-breakpoint-down(md) {
+        // font-size: 1.2rem;
+        // @include display-flex();
+        // @include justify-content(space-between);
+        // @include align-items(center);
+      }
+
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $primary;
+
+        svg:not(.arrow),
+        svg:not(.arrow) path {
+          color: $primary;
+          fill: $primary;
+        }
+      }
+    }
+
+    &:focus,
+    .nav-link:focus {
+      outline: none !important;
+    }
+  }
+}
+
+// Complete styles for main navbar toggler and hamburger menu
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  outline: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.offcanvas {
+  max-width: 85%;
+
+  .logo {
+    filter: brightness(200);
+  }
+
+  .offcanvas-end {
+    max-width: 85%;
+  }
+
+  .offcanvas-header {
+    background: linear-gradient(to right, darken($secondary, 5%), darken($secondary, 20%)) !important;
+  }
+
+  .offcanvas-body {
+    background: linear-gradient(to right, $secondary, darken($secondary, 15%)) !important;
+    backdrop-filter: blur(4px);
+  }
+
+  .offcanvas-header {
+    position: relative;
+
+    .btn-close {
+      position: absolute;
+      left: -30px;
+      top: 9px;
+    }
+  }
+}
+
+// Animation to fade in the dropdown menus
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,42 @@
+/**
+ * = Modals
+ */
+$modal-content-border-radius: 8px;
+
+.modal {
+  &.static-example {
+    position: relative;
+    display: block;
+  }
+}
+
+.modal-content {
+  border: 0;
+  background: #F5FBFA;
+
+  @if $enable-rounded {
+    border-radius: $modal-content-border-radius;
+  }
+
+  @else {
+    border-radius: 0;
+  }
+}
+
+.modal-fluid {
+  .modal-dialog {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .modal-content {
+    border-radius: 0;
+  }
+}
+
+@each $color,
+$value in $theme-colors {
+  .modal-#{$color} {
+    @include modal-variant($value);
+  }
+}

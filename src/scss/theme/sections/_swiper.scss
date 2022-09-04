@@ -1,0 +1,9 @@
+ .mySwiper {
+   .swiper-wrapper {
+     .swiper-slide {
+       &:first-child {}
+
+       &:last-child {}
+     }
+   }
+ }

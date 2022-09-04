@@ -1,0 +1,22 @@
+ .modal {
+   .modal-dialog {
+     .modal-content {
+
+       .modal-header,
+       .modal-footer {
+         border: none;
+       }
+
+       .modal-title {}
+
+       .modal-content {
+
+         .heading {}
+       }
+
+       .close {
+         &>span:not(.sr-only) {}
+       }
+     }
+   }
+ }

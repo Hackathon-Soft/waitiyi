@@ -1,0 +1,60 @@
+.cta {
+  figure {
+    border-radius: 4px;
+    background: linear-gradient(90deg, #EEDDB8 0%, rgba(238, 221, 184, 0.5) 0.01%, rgba(199, 202, 235, 0.4) 100%), #FFFFFF;
+    padding: 45px 24px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      padding: 45px 24px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      padding: 45px 24px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      padding: 45px 45px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      padding: 45px 45px;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {
+      padding: 45px 45px;
+    }
+
+    .svg-wrapper {
+      margin-bottom: 24px;
+    }
+
+    .blockquote,
+    .blockquote p,
+    .blockquote-footer {
+      font-weight: 500;
+      @include font-size(14px, 16px, 18px, 20px, 22px, 24px);
+      // line-height: 36px;
+      font-style: normal;
+      color: #000000;
+
+      p {}
+    }
+
+    .blockquote-footer {
+
+      cite {
+        font-style: normal;
+        color: #000000;
+      }
+
+      &::before {
+        content: "";
+      }
+    }
+  }
+}

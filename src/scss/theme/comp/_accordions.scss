@@ -1,0 +1,81 @@
+/**
+ * = Accordions
+*/
+
+.accordion-button {
+  text-align: left;
+
+  &:not(.collapsed) {
+    box-shadow: none;
+
+    img.icons {
+      &.plus {
+        display: none;
+      }
+
+      &.minus {
+        display: block;
+      }
+    }
+
+    &::after {
+      background-image: none;
+      // @include transform(rotateZ(45deg));
+    }
+  }
+
+  img.icons {
+    &.plus {
+      display: block;
+    }
+
+    &.minus {
+      display: none;
+    }
+  }
+
+  // Accordion icon
+  &::after {
+    content: '\f067';
+    content: none;
+  }
+
+  &:hover {
+    background-color: $gray-200;
+  }
+}
+
+
+// Flush accordion items
+//
+$faqs-padding: 1rem;
+
+.accordion-flush {
+  .accordion-item {
+    border-bottom: 0.0625rem solid #EAEAEA;
+
+    .accordion-body {
+      font-style: normal;
+      font-weight: 350;
+      font-size: 14px;
+      line-height: 22px;
+      color: #707070;
+    }
+  }
+
+  .accordion-button {
+    background-color: transparent;
+    padding: $faqs-padding/2 0px;
+
+    &:not(.collapsed) {}
+
+    &:focus {
+      border-color: $gray-300;
+      box-shadow: none;
+    }
+  }
+
+  .accordion-collapse {
+    border: 0;
+  }
+}

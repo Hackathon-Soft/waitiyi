@@ -1,0 +1,50 @@
+ // Font SIZE Responsive
+ @mixin font-size($fs1, $fs2, $fs3, $fs4, $fs5, $fs6) {
+   font-size: #{$fs1};
+
+   // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {}
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+     font-size: #{$fs2};
+   }
+
+   // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+     font-size: #{$fs3};
+   }
+
+   // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+     font-size: #{$fs4};
+   }
+
+   // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {
+     font-size: #{$fs5};
+   }
+
+   // @include media-breakpoint-down(xxl) {
+   //   font-size: #{$fs6};
+   // }
+   // @include media-breakpoint-down(sm) {
+   //   font-size: #{$fs2};
+   // }
+
+   // @include media-breakpoint-down(md) {
+   //   font-size: #{$fs3};
+   // }
+
+   // @include media-breakpoint-down(lg) {
+   //   font-size: #{$fs4};
+   // }
+
+   // @include media-breakpoint-down(xl) {
+   //   font-size: #{$fs5};
+   // }
+
+   // @include media-breakpoint-down(xxl) {
+   //   font-size: #{$fs6};
+   // }
+ }

@@ -1,0 +1,25 @@
+ .card.tab {
+   display: block;
+   background: #ffffff;
+
+   .badge {
+     display: none;
+   }
+ }
+
+ .card.tab.active {
+   display: block;
+   background: #F5FBFA;
+
+   .badge {
+     display: block;
+   }
+ }
+
+ .custom-tab-content {
+   display: none;
+ }
+
+ .custom-tab-content.active {
+   display: block;
+ }

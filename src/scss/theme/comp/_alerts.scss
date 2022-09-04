@@ -1,0 +1,28 @@
+.alert {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+
+  padding: 16px;
+  border-radius: 8px;
+
+  &-info {
+    border-color: #E9EAF7;
+    background: #E9EAF7;
+  }
+
+  &-danger {
+    border-color: $danger;
+    background: rgba($danger, 0.05);
+  }
+}
+
+.alert-heading {
+  font-weight: $font-weight-bold;
+}
+
+.alert-icon {
+  margin-bottom: .5rem;
+}

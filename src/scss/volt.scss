@@ -1,0 +1,10 @@
+@import "./variables";
+// @import "./custom-theme";
+
+@import "./bootstrap/bootstrap.scss";
+// @import "node_modules/bootstrap/scss/bootstrap";
+@import "./custom-theme";
+@import "./plugins/index";
+
+@import "./ov";
+@import "./variables";

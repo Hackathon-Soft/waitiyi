@@ -1,0 +1,262 @@
+/*
+* = Buttons
+*/
+$border-btn-width: 2px;
+
+.btn {
+  // gap: 4px;
+  border-width: 0;
+  box-shadow: 0px 0px 0px $border-btn-width $primary;
+  padding: 10px 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+
+  .popover {
+    box-shadow: none !important;
+  }
+
+  // Extra Small devices (landscape phones, 376px and up)
+  @include media-breakpoint-up(xs) {}
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  // &-outline-main {
+  //   color: $primary;
+  //   box-shadow: 0px 0px 0px $border-btn-width $primary;
+  //   background-color: #fff;
+  //   transition: all 0.3s linear;
+
+  //   .btn-text {
+  //     z-index: 3;
+  //     position: relative;
+  //   }
+
+  //   &::before {
+  //     content: "";
+  //     width: calc(100% + 2px);
+  //     height: calc(100% + 2px);
+  //     position: absolute;
+  //     left: 0;
+  //     bottom: 0;
+  //     top: 0;
+  //     right: 0;
+  //     background-color: #fff;
+  //     animation: move_bg_out 1s;
+  //     animation-direction: alternate;
+  //     transition-delay: 0.05s;
+  //     transform: translateX(-100%);
+  //     z-index: 2;
+  //     transition: all 0.3s linear;
+  //   }
+
+  //   &:hover,
+  //   &:focus,
+  //   &:active {
+  //     color: #fff;
+  //     box-shadow: 0px 0px 0px $border-btn-width $primary;
+  //     // background-color: $primary;
+
+  //     &::before {
+  //       color: #fff;
+  //       background-color: $primary-hover;
+  //       animation: move_bg 1s;
+  //       animation-direction: alternate;
+  //       transform: translateX(0);
+  //       transition-delay: 0.05s;
+  //     }
+  //   }
+  // }
+
+  &-outline-main {
+    color: $primary;
+    box-shadow: 0px 0px 0px $border-btn-width $primary;
+    background-color: #fff;
+    transition: all 0.3s linear;
+
+    .btn-text {
+      z-index: 3;
+      position: relative;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+      box-shadow: 0px 0px 0px $border-btn-width $primary;
+      background-color: $primary-hover;
+    }
+  }
+
+  &-course-info {
+    color: $primary;
+    box-shadow: 0px 0px 0px $border-btn-width $primary;
+    background-color: #EEEEEE;
+    transition: all 0.3s linear;
+
+    .btn-text {
+      z-index: 3;
+      position: relative;
+    }
+
+    &::before {
+      content: "";
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      background-color: #EEEEEE;
+      animation: move_bg_out 1s;
+      animation-direction: alternate;
+      transition-delay: 0.05s;
+      transform: translateX(-100%);
+      z-index: 2;
+      transition: all 0.3s linear;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+      box-shadow: 0px 0px 0px $border-btn-width $primary;
+      // background-color: $primary;
+
+      &::before {
+        color: #fff;
+        background-color: $primary-hover;
+        animation: move_bg 1s;
+        animation-direction: alternate;
+        transform: translateX(0);
+        transition-delay: 0.05s;
+      }
+    }
+  }
+
+  &-main {
+    // border: transparent;
+    color: #fff;
+    box-shadow: 0px 0px 0px $border-btn-width $primary;
+    background-color: $primary;
+    transition: all 0.3s linear;
+
+    .btn-text {
+      z-index: 3;
+      position: relative;
+    }
+
+    &::before {
+      content: "";
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      background-color: $primary;
+      animation: move_bg_out 1s;
+      animation-direction: alternate;
+      transition-delay: 0.05s;
+      transform: translateX(-100%);
+      z-index: 2;
+      transition: all 0.3s linear;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+      box-shadow: 0px 0px 0px $border-btn-width $primary-hover;
+      background-color: $primary;
+
+      &::before {
+        color: #fff;
+        background-color: $primary-hover;
+        // background-color: blue;
+        animation: move_bg 1s;
+        animation-direction: alternate;
+        transform: translateX(0);
+        transition-delay: 0.05s;
+      }
+    }
+  }
+}
+
+@keyframes move_bg {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes move_bg_out {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+// Fix for darken background color
+@each $color,
+$value in $theme-colors {
+  .btn-#{$color} {
+    &:hover {
+      background-color: darken($value, 5%);
+      // border-color: darken($value, 5%);
+      // box-shadow: 0px 0px 0px $border-btn-width $primary;
+    }
+  }
+}
+
+// Brand (social) buttons 
+// @each $color,
+// $value in $brand-colors {
+//   .btn-#{$color} {
+//     @include button-variant($value, $value);
+
+//     &.btn-link {
+//       color: $value;
+//       background: transparent;
+//       box-shadow: none;
+//       border: 0;
+//       border-style: none;
+
+//       &:hover,
+//       &:focus,
+//       &.active {
+//         background-color: transparent !important;
+//         box-shadow: none;
+//         border: 0;
+//         color: $value;
+//       }
+//     }
+//   }
+// }
