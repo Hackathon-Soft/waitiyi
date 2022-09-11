@@ -1,35 +1,135 @@
 /**
  * = Figures
  */
+.rates-form-wrapper {
+  background: #8B25DA;
+  border-radius: 50px;
 
-.stat {
-  position: relative;
+  .card-body {
 
-  .custom-border {
-    height: 100%;
-    height: 50px;
-    height: 62px;
-    width: 8px;
-    border-radius: 4px;
-    background: #bdbdbd;
-  }
+    .input-group {
 
-  &-1 {
-    .custom-border {
-      background: #D6EEEC;
+      span.input-group-text {
+        background: transparent;
+        border: none;
+        padding: 0;
+        fill: #FFFFFF;
+        color: #FFFFFF;
+        margin-bottom: 0;
+
+        svg {
+
+          path {}
+        }
+      }
+
+      .form-control,
+      select.form-select {
+        padding: 0;
+        background: transparent;
+        border: none;
+        color: #FFFFFF;
+
+        option {
+          color: #111;
+        }
+      }
+
+      svg {
+
+        path {}
+      }
     }
   }
+}
 
-  &-2 {
-    .custom-border {
-      background: #1A4384;
-    }
+.stats.card {
+  background: #0A0320;
+  border: 1px solid #8B25DA;
+  border-radius: 50px;
+  padding: 50px;
+
+  // Extra Small devices (landscape phones, 376px and up)
+  @include media-breakpoint-up(xs) {}
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {}
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {}
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {}
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {}
+
+  .text-1,
+  .text-2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {}
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {}
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {}
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {}
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {}
   }
 
-  &-3 {
-    .custom-border {
-      background: #22A09D;
-    }
+  .text-1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #BFBFBF;
+    margin-bottom: 17px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {}
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {}
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {}
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {}
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {}
+  }
+
+  .text-2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FFFFFF;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {}
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {}
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {}
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {}
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {}
   }
 }
 

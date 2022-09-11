@@ -3,154 +3,92 @@
 */
 $border-btn-width: 2px;
 
-.btn {
-  // gap: 4px;
-  border-width: 0;
-  box-shadow: 0px 0px 0px $border-btn-width $primary;
-  padding: 10px 24px;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 18px;
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
 
-  .popover {
-    box-shadow: none !important;
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+
+.btn {
+  border-width: 0;
+  // box-shadow: 0px 0px 0px $border-btn-width $primary;
+  font-style: normal;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 15px 30px;
+  background-size: 300% 100%;
+
+  &-lg {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 15px 30px;
   }
 
   // Extra Small devices (landscape phones, 376px and up)
   @include media-breakpoint-up(xs) {}
 
   // Small devices (landscape phones, 576px and up)
-  @include media-breakpoint-up(sm) {
-    font-size: 14px;
-    line-height: 18px;
-  }
+  @include media-breakpoint-up(sm) {}
 
   // Medium devices (tablets, 768px and up)
-  @include media-breakpoint-up(md) {
-    font-size: 15px;
-    line-height: 19px;
-  }
+  @include media-breakpoint-up(md) {}
 
   // Large devices (desktops, 992px and up)
-  @include media-breakpoint-up(lg) {
-    font-size: 16px;
-    line-height: 19px;
+  @include media-breakpoint-up(lg) {}
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {}
+
+  .icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
   }
 
-  // &-outline-main {
-  //   color: $primary;
-  //   box-shadow: 0px 0px 0px $border-btn-width $primary;
-  //   background-color: #fff;
-  //   transition: all 0.3s linear;
-
-  //   .btn-text {
-  //     z-index: 3;
-  //     position: relative;
-  //   }
-
-  //   &::before {
-  //     content: "";
-  //     width: calc(100% + 2px);
-  //     height: calc(100% + 2px);
-  //     position: absolute;
-  //     left: 0;
-  //     bottom: 0;
-  //     top: 0;
-  //     right: 0;
-  //     background-color: #fff;
-  //     animation: move_bg_out 1s;
-  //     animation-direction: alternate;
-  //     transition-delay: 0.05s;
-  //     transform: translateX(-100%);
-  //     z-index: 2;
-  //     transition: all 0.3s linear;
-  //   }
-
-  //   &:hover,
-  //   &:focus,
-  //   &:active {
-  //     color: #fff;
-  //     box-shadow: 0px 0px 0px $border-btn-width $primary;
-  //     // background-color: $primary;
-
-  //     &::before {
-  //       color: #fff;
-  //       background-color: $primary-hover;
-  //       animation: move_bg 1s;
-  //       animation-direction: alternate;
-  //       transform: translateX(0);
-  //       transition-delay: 0.05s;
-  //     }
-  //   }
-  // }
-
-  &-outline-main {
-    color: $primary;
-    box-shadow: 0px 0px 0px $border-btn-width $primary;
-    background-color: #fff;
-    transition: all 0.3s linear;
-
-    .btn-text {
-      z-index: 3;
-      position: relative;
-    }
+  &-primary {
+    transition: all .4s ease-in-out;
+    color: #F8FAFC;
+    background: linear-gradient(293.49deg, $primary 3.14%, $primary-hover 49.41%, $primary-active 85.46%);
+    background-size: 300% 100%;
 
     &:hover,
     &:focus,
     &:active {
-      color: #fff;
-      box-shadow: 0px 0px 0px $border-btn-width $primary;
-      background-color: $primary-hover;
-    }
-  }
-
-  &-course-info {
-    color: $primary;
-    box-shadow: 0px 0px 0px $border-btn-width $primary;
-    background-color: #EEEEEE;
-    transition: all 0.3s linear;
-
-    .btn-text {
-      z-index: 3;
-      position: relative;
-    }
-
-    &::before {
-      content: "";
-      width: calc(100% + 2px);
-      height: calc(100% + 2px);
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      top: 0;
-      right: 0;
-      background-color: #EEEEEE;
-      animation: move_bg_out 1s;
-      animation-direction: alternate;
-      transition-delay: 0.05s;
-      transform: translateX(-100%);
-      z-index: 2;
-      transition: all 0.3s linear;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: #fff;
-      box-shadow: 0px 0px 0px $border-btn-width $primary;
-      // background-color: $primary;
-
-      &::before {
-        color: #fff;
-        background-color: $primary-hover;
-        animation: move_bg 1s;
-        animation-direction: alternate;
-        transform: translateX(0);
-        transition-delay: 0.05s;
-      }
+      background-position: 100% 0;
+      transition: all .4s ease-in-out;
+      color: #F8FAFC;
     }
   }
 
@@ -160,29 +98,6 @@ $border-btn-width: 2px;
     box-shadow: 0px 0px 0px $border-btn-width $primary;
     background-color: $primary;
     transition: all 0.3s linear;
-
-    .btn-text {
-      z-index: 3;
-      position: relative;
-    }
-
-    &::before {
-      content: "";
-      width: calc(100% + 2px);
-      height: calc(100% + 2px);
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      top: 0;
-      right: 0;
-      background-color: $primary;
-      animation: move_bg_out 1s;
-      animation-direction: alternate;
-      transition-delay: 0.05s;
-      transform: translateX(-100%);
-      z-index: 2;
-      transition: all 0.3s linear;
-    }
 
     &:hover,
     &:focus,
@@ -202,26 +117,16 @@ $border-btn-width: 2px;
       }
     }
   }
-}
 
-@keyframes move_bg {
-  0% {
-    transform: translateX(-100%);
+  &-outline-primary {
+    color: #fff;
+    border-width: 1;
+    border: 2px solid $primary;
   }
 
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes move_bg_out {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+  &:hover,
+  &:active,
+  &:focus {}
 }
 
 // Fix for darken background color
@@ -236,27 +141,30 @@ $value in $theme-colors {
   }
 }
 
-// Brand (social) buttons 
-// @each $color,
-// $value in $brand-colors {
-//   .btn-#{$color} {
-//     @include button-variant($value, $value);
+@-webkit-keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
 
-//     &.btn-link {
-//       color: $value;
-//       background: transparent;
-//       box-shadow: none;
-//       border: 0;
-//       border-style: none;
+  50% {
+    background-position: 100% 50%;
+  }
 
-//       &:hover,
-//       &:focus,
-//       &.active {
-//         background-color: transparent !important;
-//         box-shadow: none;
-//         border: 0;
-//         color: $value;
-//       }
-//     }
-//   }
-// }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

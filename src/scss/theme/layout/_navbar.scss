@@ -79,8 +79,6 @@ $border-btn-width: 2px;
   text-transform: uppercase;
 
   img {
-    filter: brightness(100);
-    // filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.562)) drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.452)) drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.474));
     height: 25px;
 
     // Extra Small devices (landscape phones, 376px and up)
@@ -111,47 +109,26 @@ $border-btn-width: 2px;
 .btn-nav {
   border-width: 0px;
   color: $white;
-  box-shadow: 0px 0px 0px $border-btn-width #fff !important;
+  background-color: $primary;
+  border-radius: 100px;
   outline: none;
   transition: all 0.3s ease-in;
-
-  .bg {
-    width: calc(100% + 6px);
-    height: calc(100% + 6px);
-    position: absolute;
-    left: -2px;
-    bottom: 0px;
-    top: -2px;
-    z-index: -1;
-    transition: all .3s ease-in-out;
-  }
 
   &:hover,
   &:focus,
   &:active {
-    color: #fff;
-    background-color: $primary;
-    box-shadow: 0px 0px 0px $border-btn-width $primary  !important;
-    background-color: transparent;
-
-    .bg {
-      color: #fff;
-      background-color: $primary;
-    }
+    color: $white  !important;
+    background-color: $primary-hover;
   }
-
-  &:hover,
-  &:focus,
-  &:active {}
 }
 
 .navbar-nav {
 
   .nav-item {
-    margin-right: 48px;
+    // margin-right: 48px;
 
     .nav-link {
-      padding: 1.0rem 0;
+      padding: 16px 32px;
       width: auto;
       display: inline-block;
       font-weight: 500;
@@ -161,7 +138,6 @@ $border-btn-width: 2px;
       position: relative;
       outline: none;
       border: none;
-      background: none;
 
       @include media-breakpoint-down(md) {
         // font-size: 1.2rem;
@@ -202,33 +178,27 @@ $border-btn-width: 2px;
   }
 }
 
-.offcanvas {
-  max-width: 85%;
+.dropdown-menu {
+  min-width: 250px;
 
-  .logo {
-    filter: brightness(200);
-  }
+  .input-group-custom {
+    display: flex;
+    align-items: center;
 
-  .offcanvas-end {
-    max-width: 85%;
-  }
+    input,
+    button {
+      padding: 5px 15px;
+      outline: none;
+      border: 1px solid $primary;
+    }
 
-  .offcanvas-header {
-    background: linear-gradient(to right, darken($secondary, 5%), darken($secondary, 20%)) !important;
-  }
+    input {}
 
-  .offcanvas-body {
-    background: linear-gradient(to right, $secondary, darken($secondary, 15%)) !important;
-    backdrop-filter: blur(4px);
-  }
-
-  .offcanvas-header {
-    position: relative;
-
-    .btn-close {
-      position: absolute;
-      left: -30px;
-      top: 9px;
+    button {
+      animation: anime 16s linear infinite;
+      color: #F8FAFC;
+      background: $gradient-main;
+      background: linear-gradient(293.49deg, $primary 3.14%, $primary-hover 49.41%, $primary-active 85.46%);
     }
   }
 }

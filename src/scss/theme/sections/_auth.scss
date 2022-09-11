@@ -1,0 +1,230 @@
+ .form-auth {
+
+   .bg-image {
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+
+   .sec-inner,
+   .form-inner {
+     img.logo-img {
+       width: 66.79px;
+       height: 64px;
+       margin-bottom: 28px;
+     }
+
+     .form-title {
+       margin-bottom: 18px;
+       font-style: normal;
+       color: #FFFFFF;
+       font-weight: 600;
+       font-size: 48px;
+       line-height: 48px;
+       margin-bottom: 12px;
+
+       // Extra Small devices (landscape phones, 376px and up)
+       @include media-breakpoint-up(xs) {
+         font-size: 48px;
+         line-height: 48px;
+       }
+
+       // Small devices (landscape phones, 576px and up)
+       @include media-breakpoint-up(sm) {
+         font-size: 48px;
+         line-height: 48px;
+       }
+
+       // Medium devices (tablets, 768px and up)
+       @include media-breakpoint-up(md) {
+         font-size: 48px;
+         line-height: 48px;
+       }
+
+       // Large devices (desktops, 992px and up)
+       @include media-breakpoint-up(lg) {
+         font-size: 52px;
+         line-height: 62px;
+       }
+
+       // X-Large devices (large desktops, 1200px and up)
+       @include media-breakpoint-up(xl) {}
+     }
+
+     .form-text {
+       margin-bottom: 34px;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 19px;
+       line-height: 32px;
+       color: #FFFFFF;
+
+       // Extra Small devices (landscape phones, 376px and up)
+       @include media-breakpoint-up(xs) {
+         font-size: 19px;
+         line-height: 32px;
+       }
+
+       // Small devices (landscape phones, 576px and up)
+       @include media-breakpoint-up(sm) {
+         font-size: 19px;
+         line-height: 32px;
+       }
+
+       // Medium devices (tablets, 768px and up)
+       @include media-breakpoint-up(md) {
+         font-size: 19px;
+         line-height: 32px;
+       }
+
+       // Large devices (desktops, 992px and up)
+       @include media-breakpoint-up(lg) {
+         font-size: 19px;
+         line-height: 32px;
+       }
+
+       // X-Large devices (large desktops, 1200px and up)
+       @include media-breakpoint-up(xl) {
+         font-size: 19px;
+         line-height: 32px;
+       }
+     }
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: start;
+     padding: 0 15%;
+     padding: 0 120px;
+
+     .sm-title {
+       font-style: normal;
+       font-weight: 600;
+       font-size: 16px;
+       line-height: 24px;
+       letter-spacing: 0.25em;
+       text-transform: uppercase;
+       color: #DE01FE;
+       margin-bottom: 4px;
+     }
+
+     .title {
+       margin-bottom: 18px;
+       font-style: normal;
+       color: #FFFFFF;
+       font-weight: 600;
+       font-size: 48px;
+       line-height: 48px;
+       margin-bottom: 12px;
+
+       // Extra Small devices (landscape phones, 376px and up)
+       @include media-breakpoint-up(xs) {
+         font-size: 48px;
+         line-height: 48px;
+       }
+
+       // Small devices (landscape phones, 576px and up)
+       @include media-breakpoint-up(sm) {
+         font-size: 48px;
+         line-height: 48px;
+       }
+
+       // Medium devices (tablets, 768px and up)
+       @include media-breakpoint-up(md) {
+         font-size: 48px;
+         line-height: 48px;
+       }
+
+       // Large devices (desktops, 992px and up)
+       @include media-breakpoint-up(lg) {
+         font-size: 52px;
+         line-height: 62px;
+       }
+
+       // X-Large devices (large desktops, 1200px and up)
+       @include media-breakpoint-up(xl) {}
+     }
+
+     .sec-text {
+       margin-bottom: 34px;
+       color: #FFFFFF;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 32px;
+
+       // Extra Small devices (landscape phones, 376px and up)
+       @include media-breakpoint-up(xs) {
+         font-size: 20px;
+         line-height: 32px;
+       }
+
+       // Small devices (landscape phones, 576px and up)
+       @include media-breakpoint-up(sm) {
+         font-size: 20px;
+         line-height: 32px;
+       }
+
+       // Medium devices (tablets, 768px and up)
+       @include media-breakpoint-up(md) {
+         font-size: 20px;
+         line-height: 32px;
+       }
+
+       // Large devices (desktops, 992px and up)
+       @include media-breakpoint-up(lg) {
+         font-size: 20px;
+         line-height: 32px;
+       }
+
+       // X-Large devices (large desktops, 1200px and up)
+       @include media-breakpoint-up(xl) {
+         font-size: 20px;
+         line-height: 32px;
+       }
+     }
+
+     a.btn {
+
+       svg.icon {
+
+         path {}
+       }
+
+       span {}
+     }
+
+     .form-group {
+
+       .icon {
+
+         svg {
+
+           path {}
+         }
+       }
+
+       .form-floating {
+         display: flex;
+         align-items: center;
+
+         .form-control {
+           //  background: none !important;
+          //  background: #35055A;
+           outline: none;
+           border-radius: 0px;
+           border: none;
+           border-bottom: 0.7px solid #808080;
+         }
+
+         label {
+           font-style: normal;
+           font-weight: 500;
+           font-size: 16px;
+           line-height: 19px;
+           text-transform: capitalize;
+           color: #999999;
+         }
+       }
+     }
+   }
+ }

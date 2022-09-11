@@ -22,70 +22,59 @@
       </a>
     </div>
     <div class="d-flex d-md-none">
-      <a href="/pages/registration-short.html" class="btn btn-outline-white btn-nav">
-        <i class="bg"></i>
-        <span class="btn-text">Join Us</span>
+      <a href="/pages/registration-short.html" class="btn btn-lg btn-outline-white btn-nav">
+        Home
       </a>
     </div>
     <div class="collapse position-relative navbar-collapse" id="navbar-content">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <button class="nav-link @@if (context.page_group !== 'page_examples') {  }" onclick="
-location.href='/pages/courses.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="mb-0 font-small">
-              Courses
-
-            </span>
-          </button>
+        <li class="nav-item active">
+          <a class="nav-link active @@if (context.page_group !== 'intensives') {  }" href="#" role="button">
+            Home
+          </a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="#" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="mb-0 font-small">
-              Intensives
-            </span>
+        <li class="nav-item">
+          <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="/pages/contactus.html"
+            role="button">
+            Contact
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="/pages/about-us.html" role="button">
+            About us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@if (context.page_group !== 'page_examples') {  }" href="/pages/call-rates.html"
+            role="button" aria-expanded="false">
+            Call Rates
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-nav" href="#" data-bs-toggle="dropdown">
+            Sign in
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link @@if (context.page_group !== 'page_examples') {  }" href="#" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="mb-0 font-small">
-              Events
-            </span>
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            data-bs-auto-close="outside">
+            <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13 25C19.6274 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13C1 19.6274 6.37258 25 13 25Z"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 22L29 29" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </a>
-        </li>
-        <li class="nav-item dropdown dropdown-mega position-static">
-          <a class="nav-link" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-            Community
-          </a>
+          <div class="dropdown-menu dropdown-menu-end">
+            <form class="px-4 py-3">
+              <div class="input-group-custom">
+                <input type="text" class="" placeholder="Search...">
+                <button type="submit" class="">Search</button>
+              </div>
+            </form>
+          </div>
         </li>
       </ul>
-      <div class="d-flex">
-        <a href="/pages/registration-short.html" class="btn btn-outline-white btn-nav">
-          <i class="bg"></i>
-          <span class="btn-text">Join Naseeha</span>
-        </a>
-      </div>
     </div>
   </div>
 </nav>
-<div class="offcanvas offcanvas-end text-bg-light gradient-main" tabindex="-1" id="offcanvasNavbarDark"
-  aria-labelledby="offcanvasNavbarDarkLabel">
-  <div class="offcanvas-header">
-    <a class="offcanvas-title" href="/" id="offcanvasNavbarDarkLabel">
-      <img alt="Feedify" src="/assets/img/logo.svg" height="35" class="logo" />
-    </a>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
-    </ul>
-    <div class="d-flex">
-      <a href="/pages/registration-short.html" class="btn btn-outline-white btn-nav">
-        <i class="bg"></i>
-        <span class="btn-text">Join Naseeha</span>
-      </a>
-    </div>
-  </div>
-</div>

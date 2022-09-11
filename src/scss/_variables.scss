@@ -1,4 +1,5 @@
-$gradient-main: linear-gradient(90deg, #EEDDB8 0%, rgba(238, 221, 184, 0.5) 0.01%, rgba(199, 202, 235, 0.4) 100%);
+$gradient-main: linear-gradient(293.49deg, #8800CC 3.14%, #9900BB 49.41%, #AA00AA 85.46%);
+
 $gradient-2: linear-gradient(90deg, #EEDDB8 0%, rgba(238, 221, 184, 0.83) 0.01%, rgba(199, 202, 235, 0.775) 100%);
 
 
@@ -6,8 +7,8 @@ $container-margins: 16px;
 $container-margins-xs: 16px;
 $container-margins-sm: 16px;
 $container-margins-md: 80px;
-$container-margins-lg: 196px;
-$container-margins-xl: 196px;
+$container-margins-lg: 103px;
+$container-margins-xl: 103px;
 
 // Variables
 //
@@ -81,15 +82,14 @@ $colors: (
 // scss-docs-end colors-map
 
 // Color scheme
-$primary: #C57E2B;
-$primary-hover: #B15D23;
-$primary-active: #B15D23;
-$secondary: #3B3DA5;
+$primary: #8800CC;
+$primary-hover: #9900BB;
+$primary-active: #AA00AA;
+$secondary: #DE01FE;
 
 $success: $green;
 $info : $blue;
 $warning: $yellow;
-$danger : $red;
 $gray : $gray-900;
 $light : $gray-400;
 $lighten: $gray-300;
@@ -166,7 +166,7 @@ $container-max-widths: (
 // Typography
 // 
 $font-family-sans-serif: 'Montserrat', sans-serif;
-// $font-family-base: var(--#{$prefix}font-sans-serif) !default;
+$font-family-sans-serif: 'Poppins', sans-serif;
 
 // Grid columns 
 $grid-columns : 12;
