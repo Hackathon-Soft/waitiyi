@@ -1,5 +1,30 @@
 .form-group {
-  margin-bottom: 22px;
+  margin-bottom: 10px;
+
+  // Extra Small devices (landscape phones, 376px and up)
+  @include media-breakpoint-up(xs) {
+    margin-bottom: 15px;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 20px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    margin-bottom: 23px;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 25px;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 30px;
+  }
 }
 
 input.form-control,
@@ -31,9 +56,33 @@ select.form-select,
   background: #37055C;
   border: 2px solid #8800CC;
   border-radius: 50px;
-  margin-bottom: 30px;
   padding: 22px 34px;
-  padding: 18px 34px;
+  padding: 10px 22px;
+
+  // Extra Small devices (landscape phones, 376px and up)
+  @include media-breakpoint-up(xs) {
+    padding: 12px 25px;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    padding: 14px 28px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    padding: 16px 30px;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    padding: 17px 33px;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {
+    padding: 18px 34px;
+  }
 
   &:focus,
   &:active,

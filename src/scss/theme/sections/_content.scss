@@ -3,22 +3,87 @@
     // font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 18.1176px;
-    line-height: 22px;
     letter-spacing: -0.02em;
     color: #FF00FF;
+    font-size: 14px;
+    line-height: 20px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      font-size: 17px;
+      line-height: 22px;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {
+      font-size: 18.1176px;
+      line-height: 22px;
+    }
   }
 
   .title {
     // font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 28px;
     text-align: center;
-    letter-spacing: -0.02em;
     color: #FFFFFF;
-    margin-bottom: 71px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-size: 26px;
+    line-height: 24px;
+    margin-bottom: 36px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      font-size: 26px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      font-size: 30px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+      line-height: 24px;
+      margin-bottom: 50px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      font-size: 34px;
+      line-height: 26px;
+      margin-bottom: 61px;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {
+      font-size: 40px;
+      line-height: 28px;
+      margin-bottom: 71px;
+    }
   }
 
   .title-sub {}
@@ -41,7 +106,32 @@ $sec-txt-lh: 30px;
       line-height: 22px;
       letter-spacing: -0.02em;
       color: #FFFFFF;
-      margin-bottom: 36px;
+      margin-bottom: 10px;
+
+      // Extra Small devices (landscape phones, 376px and up)
+      @include media-breakpoint-up(xs) {
+        margin-bottom: 14px;
+      }
+
+      // Small devices (landscape phones, 576px and up)
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 22px;
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @include media-breakpoint-up(md) {
+        margin-bottom: 30px;
+      }
+
+      // Large devices (desktops, 992px and up)
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 32px;
+      }
+
+      // X-Large devices (large desktops, 1200px and up)
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 36px;
+      }
     }
 
     .title {
@@ -50,25 +140,25 @@ $sec-txt-lh: 30px;
       color: #FFFFFF;
       font-weight: 600;
       letter-spacing: -0.02em;
-      font-size: 72px;
-      line-height: 82px;
+      font-size: 32px;
+      line-height: 40px;
 
       // Extra Small devices (landscape phones, 376px and up)
       @include media-breakpoint-up(xs) {
-        font-size: 72px;
-        line-height: 82px;
+        font-size: 42px;
+        line-height: 50px;
       }
 
       // Small devices (landscape phones, 576px and up)
       @include media-breakpoint-up(sm) {
-        font-size: 72px;
-        line-height: 82px;
+        font-size: 52px;
+        line-height: 72px;
       }
 
       // Medium devices (tablets, 768px and up)
       @include media-breakpoint-up(md) {
-        font-size: 72px;
-        line-height: 82px;
+        font-size: 62px;
+        line-height: 76px;
       }
 
       // Large devices (desktops, 992px and up)
@@ -81,21 +171,49 @@ $sec-txt-lh: 30px;
       @include media-breakpoint-up(xl) {}
 
       &.type-2 {
-        margin-bottom: 40px;
+        margin-bottom: 18px;
+
+        // Extra Small devices (landscape phones, 376px and up)
+        @include media-breakpoint-up(xs) {
+          margin-bottom: 20px;
+        }
+
+        // Small devices (landscape phones, 576px and up)
+        @include media-breakpoint-up(sm) {
+          margin-bottom: 25px;
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @include media-breakpoint-up(md) {
+          margin-bottom: 30px;
+        }
+
+        // Large devices (desktops, 992px and up)
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 35px;
+        }
+
+        // X-Large devices (large desktops, 1200px and up)
+        @include media-breakpoint-up(xl) {
+          margin-bottom: 40px;
+        }
       }
     }
 
     .sec-text {
       // margin-bottom: 56px;
       font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 30px;
-      letter-spacing: 0.05em;
       color: #FFFFFF;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
 
       // Extra Small devices (landscape phones, 376px and up)
-      @include media-breakpoint-up(xs) {}
+      @include media-breakpoint-up(xs) {
+        font-size: 16px;
+        line-height: 26px;
+      }
 
       // Small devices (landscape phones, 576px and up)
       @include media-breakpoint-up(sm) {
@@ -111,12 +229,15 @@ $sec-txt-lh: 30px;
 
       // Large devices (desktops, 992px and up)
       @include media-breakpoint-up(lg) {
-        font-size: 20px;
+        font-size: 19px;
         line-height: 32px;
       }
 
       // X-Large devices (large desktops, 1200px and up)
-      @include media-breakpoint-up(xl) {}
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+        line-height: 32px;
+      }
 
       &.type-2 {
         margin-bottom: 70px;
@@ -210,11 +331,11 @@ $sec-txt-lh: 30px;
   }
 }
 
-$sec-padding: 50px;
-$sec-padding-xs: 60px;
-$sec-padding-sm: 70px;
-$sec-padding-md: 80px;
-$sec-padding-lg: 90px;
+$sec-padding: 30px;
+$sec-padding-xs: 50px;
+$sec-padding-sm: 60px;
+$sec-padding-md: 70px;
+$sec-padding-lg: 80px;
 $sec-padding-xl: 100px;
 
 

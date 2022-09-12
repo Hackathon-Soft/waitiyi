@@ -29,14 +29,42 @@
 
     // Large devices (desktops, 992px and up)
     @include media-breakpoint-up(lg) {
-      padding-top: 60px;
+      padding-top: 55px;
     }
 
     // X-Large devices (large desktops, 1200px and up)
-    @include media-breakpoint-up(xl) {}
+    @include media-breakpoint-up(xl) {
+      padding-top: 60px;
+    }
 
     .logo {
-      height: 49px;
+      height: 30px;
+
+      // Extra Small devices (landscape phones, 376px and up)
+      @include media-breakpoint-up(xs) {
+        height: 30px;
+      }
+
+      // Small devices (landscape phones, 576px and up)
+      @include media-breakpoint-up(sm) {
+        height: 35px;
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @include media-breakpoint-up(md) {
+        height: 40px;
+      }
+
+      // Large devices (desktops, 992px and up)
+      @include media-breakpoint-up(lg) {
+        height: 45px;
+      }
+
+      // X-Large devices (large desktops, 1200px and up)
+      @include media-breakpoint-up(xl) {
+        height: 49px;
+      }
+
       // filter: brightness(100);
       // transition: filter 0.3s ease-in-out;
 
@@ -85,8 +113,6 @@
 .social {
   a {
     padding: 0;
-    width: 50px;
-    height: 50px;
     text-align: center;
     transition: color, fill 0.2s ease-in-out;
     display: inline-block;
@@ -96,6 +122,76 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(340.27deg, #8800CC 13.08%, #9900BB 81.03%, #8800CC 133.98%);
+    width: 25px;
+    height: 25px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      width: 30px;
+      height: 30px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      width: 35px;
+      height: 35px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      width: 40px;
+      height: 40px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      width: 45px;
+      height: 45px;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {
+      width: 50px;
+      height: 50px;
+    }
+
+    svg,
+    path {
+      width: 80%;
+      height: 80%;
+      //   width: 20px;
+      //   height: 20px;
+
+      //   // Extra Small devices (landscape phones, 376px and up)
+      //   @include media-breakpoint-up(xs) {
+      //     width: 22px;
+      //     height: 22px;
+      //   }
+
+      //   // Small devices (landscape phones, 576px and up)
+      //   @include media-breakpoint-up(sm) {
+      //     width: 25px;
+      //     height: 25px;
+      //   }
+
+      //   // Medium devices (tablets, 768px and up)
+      //   @include media-breakpoint-up(md) {
+      //     width: 28px;
+      //     height: 28px;
+      //   }
+
+      //   // Large devices (desktops, 992px and up)
+      //   @include media-breakpoint-up(lg) {
+      //     width: 30px;
+      //     height: 30px;
+      //   }
+
+      //   // X-Large devices (large desktops, 1200px and up)
+      //   @include media-breakpoint-up(xl) {
+      //     width: 35px;
+      //     height: 35px;
+      //   }
+    }
 
     &:hover,
     &:active,

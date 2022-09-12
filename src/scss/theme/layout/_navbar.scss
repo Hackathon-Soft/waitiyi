@@ -74,6 +74,14 @@ $border-btn-width: 2px;
   }
 }
 
+.offcanvas-backdrop {
+  z-index: -1;
+  background-color: rgba(#161616, 0.88);
+
+  &.offcanvas-backdrop.show {
+    opacity: 1;
+  }
+}
 
 .navbar-brand {
   text-transform: uppercase;
@@ -104,21 +112,14 @@ $border-btn-width: 2px;
   }
 }
 
-$border-btn-width: 2px;
-
-.btn-nav {
-  border-width: 0px;
-  color: $white;
-  background-color: $primary;
-  border-radius: 100px;
+// Complete styles for main navbar toggler and hamburger menu
+.navbar-toggler {
+  border: none;
+  padding: 0;
   outline: none;
-  transition: all 0.3s ease-in;
 
-  &:hover,
-  &:focus,
-  &:active {
-    color: $white  !important;
-    background-color: $primary-hover;
+  &:focus {
+    box-shadow: none;
   }
 }
 
@@ -128,7 +129,6 @@ $border-btn-width: 2px;
     // margin-right: 48px;
 
     .nav-link {
-      padding: 16px 32px;
       width: auto;
       display: inline-block;
       font-weight: 500;
@@ -138,14 +138,32 @@ $border-btn-width: 2px;
       position: relative;
       outline: none;
       border: none;
+      padding: 12px 0px;
 
-      @include media-breakpoint-down(md) {
-        // font-size: 1.2rem;
-        // @include display-flex();
-        // @include justify-content(space-between);
-        // @include align-items(center);
+      // Extra Small devices (landscape phones, 376px and up)
+      @include media-breakpoint-up(xs) {
+        padding: 12px 0px;
       }
 
+      // Small devices (landscape phones, 576px and up)
+      @include media-breakpoint-up(sm) {
+        padding: 12px 12px;
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @include media-breakpoint-up(md) {
+        padding: 12px 16px;
+      }
+
+      // Large devices (desktops, 992px and up)
+      @include media-breakpoint-up(lg) {
+        padding: 14px 32px;
+      }
+
+      // X-Large devices (large desktops, 1200px and up)
+      @include media-breakpoint-up(xl) {
+        padding: 16px 32px;
+      }
 
       &:hover,
       &:focus,
@@ -167,14 +185,22 @@ $border-btn-width: 2px;
   }
 }
 
-// Complete styles for main navbar toggler and hamburger menu
-.navbar-toggler {
-  border: none;
-  padding: 0;
-  outline: none;
 
-  &:focus {
-    box-shadow: none;
+$border-btn-width: 2px;
+
+.btn-nav {
+  border-width: 0px;
+  color: $white;
+  background-color: $primary;
+  border-radius: 100px;
+  outline: none;
+  transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white  !important;
+    background-color: $primary-hover;
   }
 }
 

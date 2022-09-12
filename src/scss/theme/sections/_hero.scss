@@ -12,55 +12,91 @@
     }
 
     .title {
-      margin-bottom: 32px;
       font-style: normal;
       font-weight: 600;
-      font-size: 64px;
-      line-height: 82px;
+      font-size: 26px;
+      line-height: 38px;
+      margin-bottom: 14px;
 
       // Extra Small devices (landscape phones, 376px and up)
       @include media-breakpoint-up(xs) {
-        font-size: 64px;
-        line-height: 82px;
+        font-size: 34px;
+        line-height: 44px;
+        margin-bottom: 16px;
       }
 
       // Small devices (landscape phones, 576px and up)
       @include media-breakpoint-up(sm) {
-        font-size: 64px;
-        line-height: 82px;
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 22px;
       }
 
       // Medium devices (tablets, 768px and up)
       @include media-breakpoint-up(md) {
-        font-size: 64px;
-        line-height: 82px;
+        font-size: 50px;
+        line-height: 64px;
+        margin-bottom: 24px;
       }
 
       // Large devices (desktops, 992px and up)
       @include media-breakpoint-up(lg) {
-        font-size: 64px;
-        line-height: 82px;
+        font-size: 54px;
+        line-height: 70px;
+        margin-bottom: 32px;
       }
 
       // X-Large devices (large desktops, 1200px and up)
-      @include media-breakpoint-up(xl) {}
+      @include media-breakpoint-up(xl) {
+        font-size: 60px;
+        line-height: 80px;
+        margin-bottom: 32px;
+      }
 
       &.type-2 {
-        margin-bottom: 40px;
+        margin-bottom: 18px;
+
+        // Extra Small devices (landscape phones, 376px and up)
+        @include media-breakpoint-up(xs) {
+          margin-bottom: 20px;
+        }
+
+        // Small devices (landscape phones, 576px and up)
+        @include media-breakpoint-up(sm) {
+          margin-bottom: 25px;
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @include media-breakpoint-up(md) {
+          margin-bottom: 30px;
+        }
+
+        // Large devices (desktops, 992px and up)
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 35px;
+        }
+
+        // X-Large devices (large desktops, 1200px and up)
+        @include media-breakpoint-up(xl) {
+          margin-bottom: 40px;
+        }
       }
     }
 
     .sec-text {
       // margin-bottom: 56px;
       font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 30px;
       letter-spacing: 0.05em;
+      font-weight: 500;
       color: #FFFFFF;
+      font-size: 13px;
+      line-height: 24px;
 
       // Extra Small devices (landscape phones, 376px and up)
-      @include media-breakpoint-up(xs) {}
+      @include media-breakpoint-up(xs) {
+        font-size: 14px;
+        line-height: 26px;
+      }
 
       // Small devices (landscape phones, 576px and up)
       @include media-breakpoint-up(sm) {
@@ -81,10 +117,38 @@
       }
 
       // X-Large devices (large desktops, 1200px and up)
-      @include media-breakpoint-up(xl) {}
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+        line-height: 32px;
+      }
 
       &.type-2 {
-        margin-bottom: 80px;
+        margin-bottom: 30px;
+
+        // Extra Small devices (landscape phones, 376px and up)
+        @include media-breakpoint-up(xs) {
+          margin-bottom: 40px;
+        }
+
+        // Small devices (landscape phones, 576px and up)
+        @include media-breakpoint-up(sm) {
+          margin-bottom: 50px;
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @include media-breakpoint-up(md) {
+          margin-bottom: 60px;
+        }
+
+        // Large devices (desktops, 992px and up)
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 70px;
+        }
+
+        // X-Large devices (large desktops, 1200px and up)
+        @include media-breakpoint-up(xl) {
+          margin-bottom: 80px;
+        }
       }
     }
 
@@ -107,5 +171,35 @@
       // X-Large devices (large desktops, 1200px and up)
       @include media-breakpoint-up(xl) {}
     }
+  }
+}
+
+
+.border-md-start {
+  border-left: none;
+
+  // Extra Small devices (landscape phones, 376px and up)
+  @include media-breakpoint-up(xs) {
+    border-left: none;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    border-left: none;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    border-left: 1px solid gray;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    border-left: 1px solid gray;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {
+    border-left: 1px solid gray;
   }
 }
