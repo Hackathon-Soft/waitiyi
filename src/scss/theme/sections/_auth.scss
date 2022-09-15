@@ -3,6 +3,7 @@
    .bg-image {
      background-size: cover;
      background-repeat: no-repeat;
+     background-position: center;
    }
 
    .sec-inner,
@@ -18,32 +19,32 @@
        font-style: normal;
        color: #FFFFFF;
        font-weight: 600;
-       font-size: 48px;
-       line-height: 48px;
+       font-size: 34px;
+       line-height: 40px;
        margin-bottom: 12px;
 
        // Extra Small devices (landscape phones, 376px and up)
        @include media-breakpoint-up(xs) {
-         font-size: 48px;
-         line-height: 48px;
+         font-size: 38px;
+         line-height: 40px;
        }
 
        // Small devices (landscape phones, 576px and up)
        @include media-breakpoint-up(sm) {
-         font-size: 48px;
-         line-height: 48px;
+         font-size: 42px;
+         line-height: 40px;
        }
 
        // Medium devices (tablets, 768px and up)
        @include media-breakpoint-up(md) {
-         font-size: 48px;
+         font-size: 44px;
          line-height: 48px;
        }
 
        // Large devices (desktops, 992px and up)
        @include media-breakpoint-up(lg) {
-         font-size: 52px;
-         line-height: 62px;
+         font-size: 46px;
+         line-height: 56px;
        }
 
        // X-Large devices (large desktops, 1200px and up)
@@ -51,41 +52,47 @@
      }
 
      .form-text {
-       margin-bottom: 34px;
+       font-family: $font-family-sec;
        font-style: normal;
        font-weight: 500;
-       font-size: 19px;
-       line-height: 32px;
        color: #FFFFFF;
+       font-size: 15px;
+       line-height: 28px;
+       margin-bottom: 15px;
 
        // Extra Small devices (landscape phones, 376px and up)
        @include media-breakpoint-up(xs) {
-         font-size: 19px;
-         line-height: 32px;
+         font-size: 16px;
+         line-height: 28px;
+         margin-bottom: 20px;
        }
 
        // Small devices (landscape phones, 576px and up)
        @include media-breakpoint-up(sm) {
-         font-size: 19px;
-         line-height: 32px;
+         font-size: 16px;
+         line-height: 28px;
+         margin-bottom: 20px;
        }
 
        // Medium devices (tablets, 768px and up)
        @include media-breakpoint-up(md) {
-         font-size: 19px;
-         line-height: 32px;
+         font-size: 17px;
+         line-height: 28px;
+         margin-bottom: 24px;
        }
 
        // Large devices (desktops, 992px and up)
        @include media-breakpoint-up(lg) {
-         font-size: 19px;
-         line-height: 32px;
+         font-size: 17px;
+         line-height: 30px;
+         margin-bottom: 30px;
        }
 
        // X-Large devices (large desktops, 1200px and up)
        @include media-breakpoint-up(xl) {
-         font-size: 19px;
+         font-size: 17px;
          line-height: 32px;
+         margin-bottom: 34px;
        }
      }
 
@@ -112,32 +119,32 @@
        font-style: normal;
        color: #FFFFFF;
        font-weight: 600;
-       font-size: 48px;
-       line-height: 48px;
+       font-size: 34px;
+       line-height: 40px;
        margin-bottom: 12px;
 
        // Extra Small devices (landscape phones, 376px and up)
        @include media-breakpoint-up(xs) {
-         font-size: 48px;
-         line-height: 48px;
+         font-size: 38px;
+         line-height: 40px;
        }
 
        // Small devices (landscape phones, 576px and up)
        @include media-breakpoint-up(sm) {
-         font-size: 48px;
-         line-height: 48px;
+         font-size: 42px;
+         line-height: 40px;
        }
 
        // Medium devices (tablets, 768px and up)
        @include media-breakpoint-up(md) {
-         font-size: 48px;
+         font-size: 44px;
          line-height: 48px;
        }
 
        // Large devices (desktops, 992px and up)
        @include media-breakpoint-up(lg) {
-         font-size: 52px;
-         line-height: 62px;
+         font-size: 46px;
+         line-height: 56px;
        }
 
        // X-Large devices (large desktops, 1200px and up)
@@ -145,6 +152,7 @@
      }
 
      .sec-text {
+       font-family: $font-family-sec;
        margin-bottom: 34px;
        color: #FFFFFF;
        font-style: normal;
@@ -209,7 +217,7 @@
 
          .form-control {
            //  background: none !important;
-          //  background: #35055A;
+           //  background: #35055A;
            outline: none;
            border-radius: 0px;
            border: none;
