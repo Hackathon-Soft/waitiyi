@@ -83,80 +83,81 @@
     font-style: normal;
     font-weight: 500;
     color: #BFBFBF;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
     margin-bottom: 2px;
 
     // Extra Small devices (landscape phones, 376px and up)
     @include media-breakpoint-up(xs) {
-      font-size: 17px;
+      font-size: 15px;
       line-height: 28px;
       margin-bottom: 2px;
     }
 
     // Small devices (landscape phones, 576px and up)
     @include media-breakpoint-up(sm) {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 30px;
       margin-bottom: 4px;
     }
 
     // Medium devices (tablets, 768px and up)
     @include media-breakpoint-up(md) {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 32px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     // Large devices (desktops, 992px and up)
     @include media-breakpoint-up(lg) {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 34px;
-      margin-bottom: 17px;
+      margin-bottom: 7px;
     }
 
     // X-Large devices (large desktops, 1200px and up)
     @include media-breakpoint-up(xl) {
-      font-size: 20px;
-      line-height: 36px;
-      margin-bottom: 17px;
+      font-size: 18px;
+      line-height: 34px;
+      margin-bottom: 10px;
     }
   }
 
   .text-2 {
     font-style: normal;
+    font-family: $font-family-sec;
     color: #FFFFFF;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 24px;
 
     // Extra Small devices (landscape phones, 376px and up)
     @include media-breakpoint-up(xs) {
-      font-size: 22px;
+      font-size: 20px;
       line-height: 26px;
     }
 
     // Small devices (landscape phones, 576px and up)
     @include media-breakpoint-up(sm) {
-      font-size: 24px;
+      font-size: 22px;
       line-height: 28px;
     }
 
     // Medium devices (tablets, 768px and up)
     @include media-breakpoint-up(md) {
-      font-size: 26px;
+      font-size: 24px;
       line-height: 30px;
     }
 
     // Large devices (desktops, 992px and up)
     @include media-breakpoint-up(lg) {
-      font-size: 28px;
+      font-size: 26px;
       line-height: 32px;
     }
 
     // X-Large devices (large desktops, 1200px and up)
     @include media-breakpoint-up(xl) {
-      font-size: 32px;
+      font-size: 28px;
       line-height: 36px;
     }
   }

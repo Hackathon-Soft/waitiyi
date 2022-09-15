@@ -157,18 +157,21 @@ $sec-txt-lh: 30px;
 
       // Medium devices (tablets, 768px and up)
       @include media-breakpoint-up(md) {
-        font-size: 62px;
-        line-height: 76px;
+        font-size: 56px;
+        line-height: 74px;
       }
 
       // Large devices (desktops, 992px and up)
       @include media-breakpoint-up(lg) {
-        font-size: 72px;
-        line-height: 82px;
+        font-size: 64px;
+        line-height: 74px;
       }
 
       // X-Large devices (large desktops, 1200px and up)
-      @include media-breakpoint-up(xl) {}
+      @include media-breakpoint-up(xl) {
+        font-size: 64px;
+        line-height: 74px;
+      }
 
       &.type-2 {
         margin-bottom: 18px;
