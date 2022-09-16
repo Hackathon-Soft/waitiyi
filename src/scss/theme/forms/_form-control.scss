@@ -47,7 +47,8 @@ select.form-select,
   // X-Large devices (large desktops, 1200px and up)
   @include media-breakpoint-up(xl) {}
 
-  // font-family: 'Inter';
+
+  font-family: $font-family-sec;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -89,6 +90,7 @@ select.form-select,
   &:hover {
     color: #fff;
     background: #37055C;
+    background: #150535;
     border: 2px solid #8800CC;
   }
 
@@ -116,6 +118,6 @@ textarea.form-control {
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #37055C inset !important;
+  -webkit-box-shadow: 0 0 0 1000px #150535 inset !important;
   -webkit-text-fill-color: white !important;
 }

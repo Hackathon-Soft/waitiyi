@@ -211,27 +211,24 @@
          }
        }
 
-       .form-floating {
-         display: flex;
-         align-items: center;
 
-         .form-control {
-           //  background: none !important;
-           //  background: #35055A;
-           outline: none;
-           border-radius: 0px;
-           border: none;
-           border-bottom: 0.7px solid #808080;
-         }
+       .form-control {
+         //  background: none !important;
+         //  background: #35055A;
+         padding: 5px;
+         outline: none;
+         border: none;
+         border-radius: 0px;
+         border-bottom: 0.7px solid #808080;
+       }
 
-         label {
-           font-style: normal;
-           font-weight: 500;
-           font-size: 16px;
-           line-height: 19px;
-           text-transform: capitalize;
-           color: #999999;
-         }
+       label {
+         font-style: normal;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 19px;
+         text-transform: capitalize;
+         color: #999999;
        }
      }
    }

@@ -5,17 +5,13 @@
 label:not(.form-check-label),
 .form-label,
 label {
+  font-family: $font-family-sec;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #131313;
   margin-bottom: 8px;
-}
-
-.add-logo-wrapper {
-  border: 2px dashed $success;
-  border-radius: 4px;
 }
 
 .btn-group {
