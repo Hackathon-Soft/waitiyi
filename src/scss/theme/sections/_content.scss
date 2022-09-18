@@ -203,6 +203,49 @@ $sec-txt-lh: 30px;
       }
     }
 
+    .title-sm {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 6px;
+
+      // Extra Small devices (landscape phones, 376px and up)
+      @include media-breakpoint-up(xs) {
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      // Small devices (landscape phones, 576px and up)
+      @include media-breakpoint-up(sm) {
+        font-size: 34px;
+        line-height: 38px;
+        margin-bottom: 8px;
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @include media-breakpoint-up(md) {
+        font-size: 36px;
+        line-height: 60px;
+        margin-bottom: 12px;
+      }
+
+      // Large devices (desktops, 992px and up)
+      @include media-breakpoint-up(lg) {
+        font-size: 42px;
+        line-height: 64px;
+        margin-bottom: 18px;
+      }
+
+      // X-Large devices (large desktops, 1200px and up)
+      @include media-breakpoint-up(xl) {
+        font-size: 44px;
+        line-height: 64px;
+      }
+    }
+
     .sec-text {
       // margin-bottom: 56px;
       font-style: normal;
