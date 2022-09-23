@@ -1,7 +1,7 @@
 <div class="@@classes">
   <div class="course card mb-3 @@classes_inner">
     <div class="top-img-wrapper position-relative">
-      <img src="/assets/img/courses/@@img" class="card-img-top" alt="..." />
+      <img src="./assets/img/courses/@@img" class="card-img-top" alt="..." />
       <span class="badge bg-light position-absolute">
         <svg width="12" height="12" viewBox="0 0 12 12" fill="#7D7D7D" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -18,7 +18,7 @@
       <h6 class="card-subtitle">
         Registrations Open
       </h6>
-      <a class="card-title" href="@@webRoot/course-detail.html">
+      <a class="card-title" href="./course-detail.html">
         @@title
       </a>
       <p class="card-text">
@@ -29,12 +29,12 @@
       </p>
 
       @@if (status === "true") {
-      <a href="/pages/course-detail.html" class="btn btn-lg btn-main w-100">
+      <a href="./course-detail.html" class="btn btn-lg btn-main w-100">
         <span class="btn-text">View Details</span>
       </a>
       }
       @@if (status === "false") {
-      <a href="/pages/course-detail.html" class="btn btn-lg btn-primary w-100">
+      <a href="./course-detail.html" class="btn btn-lg btn-primary w-100">
         <span class="btn-text">Set Reminder</span>
       </a>
       }

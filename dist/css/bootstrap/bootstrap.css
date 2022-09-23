@@ -3903,7 +3903,7 @@ textarea.form-control-lg {
   list-style-type: none;
   counter-reset: section; }
   .list-group-numbered > .list-group-item::before {
-    content: counters(section, ".") ". ";
+    content: counters(section, "./index.html") ". ";
     counter-increment: section; }
 
 .list-group-item-action {

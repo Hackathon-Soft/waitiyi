@@ -1,7 +1,7 @@
 /*
 
 =========================================================
-* Feedify
+* waitiyi
 =========================================================
  
 */
@@ -29,7 +29,7 @@ const paths = {
   dist: {
     base: './dist/',
     css: './dist/css',
-    html: './dist/pages',
+    html: './dist',
     assets: './dist/assets',
     img: './dist/assets/img',
     vendor: './dist/vendor'
@@ -51,7 +51,7 @@ const paths = {
   temp: {
     base: './.temp/',
     css: './.temp/css',
-    html: './.temp/pages',
+    html: './.temp',
     assets: './.temp/assets',
     vendor: './.temp/vendor'
   }

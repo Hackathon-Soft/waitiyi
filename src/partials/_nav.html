@@ -1,14 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark w-100" id="main_nav">
   <div class="container-fluid section-x-margins position-relative">
     <div>
-      <!-- <button class="navbar-toggler me-3 collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbar-content">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
-          <path fill=""
-            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
-        </svg>
-      </button> -->
       <button class="navbar-toggler border border-primary p-2 me-3" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#navbar-content" aria-controls="navbar-content">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -17,41 +9,42 @@
             d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
         </svg>
       </button>
-      <a class="navbar-brand" href="/">
-        <img alt="Feedify" src="/assets/img/logo.svg" class="logo" />
+      <a class="navbar-brand" href="./index.html">
+        <img alt="Feedify" src="./assets/img/logo.svg" class="logo" />
       </a>
     </div>
     <div class="d-flex d-md-none">
-      <a href="/" class="btn btn-outline-white btn-nav">
+      <a href="./index.html" class="btn btn-outline-white btn-nav">
         Home
       </a>
     </div>
     <div class="collapse position-relative navbar-collapse" id="navbar-content">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item active">
-          <a class="nav-link active @@if (context.page_group !== 'intensives') {  }" href="/" role="button">
+          <a class="nav-link active @@if (context.page_group !== 'intensives') {  }" href="./index.html" role="button">
             Home
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="/pages/contactus.html"
+          <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="./contactus.html"
             role="button">
             Contact
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="/pages/about-us.html" role="button">
+          <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="./about-us.html"
+            role="button">
             About us
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if (context.page_group !== 'page_examples') {  }" href="/pages/call-rates.html"
+          <a class="nav-link @@if (context.page_group !== 'page_examples') {  }" href="./call-rates.html"
             role="button" aria-expanded="false">
             Call Rates
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn-nav" href="/pages/signin.html">
+          <a class="nav-link btn-nav" href="./signin.html">
             <span class="px-5 px-md-0">Sign in</span>
           </a>
         </li>

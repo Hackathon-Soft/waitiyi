@@ -28,7 +28,7 @@
 <glyph unicode="+" glyph-name="plus" horiz-adv-x="589" d="M550 256H389V90H201V256H39V433H201V600H389V433H550V256Z" />
 <glyph unicode="," glyph-name="comma" horiz-adv-x="314" d="M267 168L160 -124H36L88 168H267Z" />
 <glyph unicode="-" glyph-name="hyphen" horiz-adv-x="578" d="M489 428V265H36V428H489Z" />
-<glyph unicode="." glyph-name="period" horiz-adv-x="301" d="M99 -8T68 20T36 93Q36 137 67 166T151 195Q202 195 233 166T265 93Q265 50 234 21T151 -8Q99 -8 68 20Z" />
+<glyph unicode="./index.html" glyph-name="period" horiz-adv-x="301" d="M99 -8T68 20T36 93Q36 137 67 166T151 195Q202 195 233 166T265 93Q265 50 234 21T151 -8Q99 -8 68 20Z" />
 <glyph unicode="/" glyph-name="slash" horiz-adv-x="426" d="M443 952L176 -193H-13L254 952H443Z" />
 <glyph unicode="0" glyph-name="zero" horiz-adv-x="657" d="M39 548T109 647T329 746Q479 746 549 647T620 376Q620 202 550 103T329 4Q178 4 109 103T39 376Q39 548 109 647ZM426 466T407 513T329 561Q270 561 251 514T232 376Q232 284 250 237T329 189Q389
 189 407 236T426 376Q426 466 407 513Z" />
